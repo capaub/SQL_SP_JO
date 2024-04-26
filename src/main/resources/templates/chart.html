@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Chart.js example</title>
+    <script src="/node_modules/chart.js/dist/chart.umd.js"></script>
+
+</head>
+<body>
+<div id="jsonData" th:text="${jsonData}" th:hidden="hidden"></div>
+<!-- <div style="width: 800px;">
+ -->    <canvas id="acquisitions"></canvas>
+<!-- </div> -->
+<script type="module" src="/src/acquisitions.js"></script>
+</body>
+</html>
