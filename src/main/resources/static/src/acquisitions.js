@@ -9,12 +9,8 @@
                 datasets: [{
                     label: 'Or',
                     data: data.map(row => row.NB_OR ),
-                    backgroundColor: [
-                        '#a57c00'
-                    ],
-                    borderColor: [
-                        '#a57c00'
-                    ],
+                    backgroundColor: ['#a57c00'],
+                    borderColor: ['#a57c00'],
                     borderWidth: 1,
                     barThickness:20
                 },{
@@ -27,12 +23,8 @@
                 },{
                     label: 'Bronze',
                     data: data.map(row => row.NB_BR),
-                    backgroundColor: [
-                        '#ad7966'
-                    ],
-                    borderColor: [
-                        '#ad7966'
-                    ],
+                    backgroundColor: ['#ad7966'],
+                    borderColor: ['#ad7966'],
                     borderWidth: 1,
                     barThickness:20
                 }]
