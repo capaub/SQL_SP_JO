@@ -15,13 +15,15 @@
                     borderColor: [
                         '#a57c00'
                     ],
-                    borderWidth: 1
+                    borderWidth: 1,
+                    barThickness:20
                 },{
                     label: 'Argent',
                     data: data.map(row => row.NB_ARG),
                     backgroundColor: ['#c7d1da'],
                     borderColor: ['#c7d1da'],
-                    borderWidth: 1
+                    borderWidth: 1,
+                    barThickness:20
                 },{
                     label: 'Bronze',
                     data: data.map(row => row.NB_BR),
@@ -31,11 +33,23 @@
                     borderColor: [
                         '#ad7966'
                     ],
-                    borderWidth: 1
+                    borderWidth: 1,
+                    barThickness:20
                 }]
             },
-            varOptions: {
-
+            options: {
+                scales:{
+                    x:{
+                        beginAtZero:true,
+                        ticks:{
+                            autoSkip:false
+                        },
+                        stacked:true
+                    },
+                    y:{
+                        stacked:true
+                    }
+                }
             }
         });
     });
